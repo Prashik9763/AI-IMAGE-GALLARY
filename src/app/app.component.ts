@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';  // Import DashboardComponent
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  standalone: true,  // Mark AppComponent as standalone
+  imports: [DashboardComponent],  // Import DashboardComponent here
 })
 export class AppComponent {
-  title = 'ai-image-gallery';
+toggleTheme() {
+throw new Error('Method not implemented.');
+}
+  title = 'Ai-image-gallery';
 }

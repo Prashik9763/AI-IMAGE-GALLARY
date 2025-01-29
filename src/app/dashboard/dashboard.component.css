@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #e6f2ff; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333; /* Dark text for readability */
+  }
+  
+  /* Container for the whole dashboard content */
+  .dashboard-container {
+    background: #ffffff; /* White background for the dashboard container */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Filters Section */
+  .filters {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 40%;
+    background-color: #f1f8ff;
+  }
+  
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f1f8ff;
+  }
+  
+  /* Image Cards Section */
+  .image-card {
+    background: #f0f8ff;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .image-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  h3 {
+    color: #0059b3; /* Dark blue text color for titles */
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .modal-content img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  button {
+    background-color: #0059b3;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #004080;
+  }
+  
+  .close-modal {
+    background-color: #ff3b30;
+    margin-top: 15px;
+  }
+  
+  .close-modal:hover {
+    background-color: #ff1f10;
+  }
+  

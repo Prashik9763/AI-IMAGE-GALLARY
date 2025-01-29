@@ -1,0 +1,27 @@
+<!-- Filters -->
+<div class="filters">
+    <!-- Search Bar -->
+    <input 
+      type="text" 
+      [(ngModel)]="searchText" 
+      (input)="onSearchChange()" 
+      placeholder="Search by title" 
+      class="search-input"
+    />
+  
+    <!-- AI Model Filter Dropdown -->
+    <select [(ngModel)]="selectedModel" (change)="onModelChange()">
+      <option value="">Select AI Model</option>
+      <option value="Stable Diffusion">Stable Diffusion</option>
+      <option value="DALL·E 2">DALL·E 2</option>
+    </select>
+  </div>
+  
+  <!-- Image Cards -->
+  <div *ngFor="let image of filteredImages" class="image-card">
+    <img [src]="image.imageUrl" [alt]="image.title" />
+    <h3>{{ image.title }}</h3>
+    <p>{{ image.generationDate }}</p>
+    <p>{{ image.aiModel }}</p>
+  </div>
+  

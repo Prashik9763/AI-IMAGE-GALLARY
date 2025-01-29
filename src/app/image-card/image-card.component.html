@@ -1,0 +1,6 @@
+<div *ngFor="let image of filteredImages" class="image-card" (click)="openModal(image)">
+    <img [src]="image.imageUrl" [alt]="image.title" />
+    <h3>{{ image.title }}</h3>
+    <p>{{ image.generationDate }}</p>
+    <p>{{ image.aiModel }}</p>
+</div>
